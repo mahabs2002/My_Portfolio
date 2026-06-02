@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Mahalakshmi BS</title>
+  <meta name="description" content="Projects by Mahalakshmi BS — ShopFlow, LendingPro, BeeVyuha." />
+  <meta name="author" content="Mahalakshmi BS" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body id="top">
+  <div class="masthead-bar"></div>
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo"></a>
+      <button class="nav-hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="page-main">
+    <section class="section projects" id="projects">
+    <div class="container">
+      <h2 class="section-title reveal">Projects</h2>
+      
+      <div class="projects-grid">
+
+        <!-- Project 1: ShopFlow -->
+        <div class="project-card reveal">
+          <div class="project-graphic-box" style="padding:0; overflow:hidden; background:#0f1923;">
+            <svg viewBox="0 0 400 220" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%; height:100%;">
+              <defs>
+                <linearGradient id="sf-bg" x1="0" y1="0" x2="400" y2="220" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#0f1923"/><stop offset="100%" stop-color="#162233"/></linearGradient>
+              </defs>
+              <rect width="400" height="220" fill="url(#sf-bg)"/>
+              <!-- Grid -->
+              <line x1="0" y1="55" x2="400" y2="55" stroke="#1e3a4f" stroke-width="1"/><line x1="0" y1="110" x2="400" y2="110" stroke="#1e3a4f" stroke-width="1"/><line x1="0" y1="165" x2="400" y2="165" stroke="#1e3a4f" stroke-width="1"/>
+              <line x1="80" y1="0" x2="80" y2="220" stroke="#1e3a4f" stroke-width="1"/><line x1="160" y1="0" x2="160" y2="220" stroke="#1e3a4f" stroke-width="1"/><line x1="240" y1="0" x2="240" y2="220" stroke="#1e3a4f" stroke-width="1"/><line x1="320" y1="0" x2="320" y2="220" stroke="#1e3a4f" stroke-width="1"/>
+              <!-- API Gateway -->
+              <rect x="15" y="80" width="75" height="58" rx="6" fill="#0d253a" stroke="#2980b9" stroke-width="2"/>
+              <rect x="15" y="80" width="75" height="18" rx="6" fill="#2980b9"/><rect x="15" y="92" width="75" height="6" fill="#2980b9"/>
+              <text x="52" y="92" fill="#fff" font-family="monospace" font-size="7.5" font-weight="bold" text-anchor="middle">API GATEWAY</text>
+              <text x="52" y="111" fill="#7fc3e8" font-family="monospace" font-size="6" text-anchor="middle">JWT Filter</text>
+              <text x="52" y="121" fill="#7fc3e8" font-family="monospace" font-size="6" text-anchor="middle">Load Balancer</text>
+              <text x="52" y="131" fill="#e74c3c" font-family="monospace" font-size="5.5" text-anchor="middle">PORT :8080</text>
+              <!-- Eureka -->
+              <rect x="155" y="10" width="90" height="40" rx="6" fill="#0d2010" stroke="#27ae60" stroke-width="2"/>
+              <text x="200" y="27" fill="#27ae60" font-family="monospace" font-size="7.5" font-weight="bold" text-anchor="middle">EUREKA</text>
+              <text x="200" y="38" fill="#6dba8a" font-family="monospace" font-size="6" text-anchor="middle">Service Registry</text>
+              <circle cx="178" cy="46" r="3" fill="#27ae60" opacity="0.5"/><circle cx="200" cy="46" r="3" fill="#27ae60"/><circle cx="222" cy="46" r="3" fill="#27ae60" opacity="0.5"/>
+              <!-- Product Service -->
+              <rect x="155" y="68" width="90" height="45" rx="6" fill="#2a1010" stroke="#e74c3c" stroke-width="2"/>
+              <text x="200" y="84" fill="#f08080" font-family="monospace" font-size="6.5" font-weight="bold" text-anchor="middle">PRODUCT-SVC</text>
+              <text x="200" y="95" fill="#9bb3c7" font-family="monospace" font-size="5.5" text-anchor="middle">Spring Boot :8081</text>
+              <text x="200" y="105" fill="#9bb3c7" font-family="monospace" font-size="5.5" text-anchor="middle">MySQL | JPA | REST</text>
+              <!-- Order Service -->
+              <rect x="155" y="130" width="90" height="45" rx="6" fill="#2a1f08" stroke="#f39c12" stroke-width="2"/>
+              <text x="200" y="146" fill="#f5b942" font-family="monospace" font-size="6.5" font-weight="bold" text-anchor="middle">ORDER-SVC</text>
+              <text x="200" y="157" fill="#9bb3c7" font-family="monospace" font-size="5.5" text-anchor="middle">Spring Boot :8082</text>
+              <text x="200" y="167" fill="#9bb3c7" font-family="monospace" font-size="5.5" text-anchor="middle">RabbitMQ Events</text>
+              <!-- RabbitMQ -->
+              <rect x="305" y="80" width="80" height="58" rx="6" fill="#200d0d" stroke="#e74c3c" stroke-width="2"/>
+              <text x="345" y="100" fill="#e74c3c" font-family="monospace" font-size="7.5" font-weight="bold" text-anchor="middle">RabbitMQ</text>
+              <rect x="320" y="106" width="50" height="8" rx="3" fill="#e74c3c" fill-opacity="0.2" stroke="#e74c3c" stroke-width="0.8"/>
+              <text x="345" y="113" fill="#f08080" font-family="monospace" font-size="5.5" text-anchor="middle">order.queue</text>
+              <text x="345" y="127" fill="#c0392b" font-family="monospace" font-size="6" text-anchor="middle">Event Broker</text>
+              <!-- Badges row -->
+              <rect x="15" y="185" width="55" height="22" rx="4" fill="#0d1f33" stroke="#2980b9" stroke-width="1.2"/>
+              <text x="42" y="199" fill="#7fc3e8" font-family="monospace" font-size="6" font-weight="bold" text-anchor="middle">Docker</text>
+              <rect x="78" y="185" width="55" height="22" rx="4" fill="#0d2010" stroke="#27ae60" stroke-width="1.2"/>
+              <text x="105" y="199" fill="#6dba8a" font-family="monospace" font-size="6" font-weight="bold" text-anchor="middle">Swagger</text>
+              <rect x="141" y="185" width="55" height="22" rx="4" fill="#1e0d2a" stroke="#9b59b6" stroke-width="1.2"/>
+              <text x="168" y="199" fill="#c39bd3" font-family="monospace" font-size="6" font-weight="bold" text-anchor="middle">JWT Auth</text>
+              <rect x="204" y="185" width="55" height="22" rx="4" fill="#2a1f08" stroke="#f39c12" stroke-width="1.2"/>
+              <text x="231" y="199" fill="#f5b942" font-family="monospace" font-size="6" font-weight="bold" text-anchor="middle">Eureka</text>
+              <!-- Lines -->
+              <line x1="90" y1="109" x2="155" y2="91" stroke="#2980b9" stroke-width="1.5" stroke-dasharray="5 3" opacity="0.8"/>
+              <line x1="90" y1="109" x2="155" y2="152" stroke="#2980b9" stroke-width="1.5" stroke-dasharray="5 3" opacity="0.8"/>
+              <line x1="200" y1="50" x2="200" y2="68" stroke="#27ae60" stroke-width="1.2" stroke-dasharray="3 3"/>
+              <line x1="245" y1="91" x2="305" y2="100" stroke="#e74c3c" stroke-width="1.5" stroke-dasharray="5 3" opacity="0.8"/>
+              <line x1="245" y1="152" x2="305" y2="118" stroke="#f39c12" stroke-width="1.5" stroke-dasharray="5 3" opacity="0.8"/>
+              <circle cx="155" cy="91" r="4" fill="#2980b9"/><circle cx="155" cy="152" r="4" fill="#2980b9"/>
+              <circle cx="305" cy="100" r="4" fill="#e74c3c"/><circle cx="305" cy="118" r="4" fill="#f39c12"/>
+            </svg>
+          </div>
+          
+          <div class="project-card-inner">
+            <span class="project-context">Distributed Systems</span>
+            <h3 class="project-title">ShopFlow – E-Commerce Microservices</h3>
+            <p class="project-desc">A scalable, production-style e-commerce backend platform built on microservices architecture. Manages product registries, order booking, JWT auth, and RabbitMQ alerts to simulate high-concurrency commercial environments.</p>
+            
+            <div class="project-tags">
+              <span class="tag">Java 17</span>
+              <span class="tag">Spring Boot</span>
+              <span class="tag">Eureka</span>
+              <span class="tag">RabbitMQ</span>
+              <span class="tag">Docker</span>
+              <span class="tag">MySQL</span>
+            </div>
+
+            <div class="project-actions">
+              <!-- Replaced with a proper Read More trigger as requested -->
+              <span class="timeline-cta project-modal-trigger" data-project="shopflow">Read more &rarr;</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: LendingPro -->
+        <div class="project-card reveal">
+          <div class="project-graphic-box" style="padding:0; overflow:hidden; background:#0a1628;">
+            <svg viewBox="0 0 400 220" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%; height:100%;">
+              <defs>
+                <linearGradient id="lp-bg" x1="0" y1="0" x2="400" y2="220" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#0a1628"/><stop offset="100%" stop-color="#0d1f3a"/></linearGradient>
+              </defs>
+              <rect width="400" height="220" fill="url(#lp-bg)"/>
+              <line x1="0" y1="55" x2="400" y2="55" stroke="#152238" stroke-width="1"/><line x1="0" y1="110" x2="400" y2="110" stroke="#152238" stroke-width="1"/><line x1="0" y1="165" x2="400" y2="165" stroke="#152238" stroke-width="1"/>
+              <line x1="100" y1="0" x2="100" y2="220" stroke="#152238" stroke-width="1"/><line x1="200" y1="0" x2="200" y2="220" stroke="#152238" stroke-width="1"/><line x1="300" y1="0" x2="300" y2="220" stroke="#152238" stroke-width="1"/>
+              <!-- Coin/Finance Icon top right -->
+              <circle cx="360" cy="35" r="25" fill="#2c1f05" stroke="#f39c12" stroke-width="2"/>
+              <text x="360" y="30" fill="#f39c12" font-family="monospace" font-size="14" font-weight="bold" text-anchor="middle">₹</text>
+              <text x="360" y="45" fill="#f5b942" font-family="monospace" font-size="5.5" text-anchor="middle">EMI ENGINE</text>
+              <!-- Loan Engine Core -->
+              <rect x="15" y="65" width="110" height="75" rx="7" fill="#0d2238" stroke="#2980b9" stroke-width="2"/>
+              <rect x="15" y="65" width="110" height="18" rx="7" fill="#2980b9"/><rect x="15" y="77" width="110" height="6" fill="#2980b9"/>
+              <text x="70" y="77" fill="#fff" font-family="monospace" font-size="7" font-weight="bold" text-anchor="middle">LOAN CORE ENGINE</text>
+              <text x="70" y="96" fill="#f5b942" font-family="monospace" font-size="6.5" text-anchor="middle">EMI = P·r·(1+r)ⁿ</text>
+              <text x="70" y="107" fill="#9bb3c7" font-family="monospace" font-size="5.5" text-anchor="middle">     / [(1+r)ⁿ - 1]</text>
+              <rect x="25" y="114" width="90" height="17" rx="3" fill="#e74c3c" fill-opacity="0.15" stroke="#e74c3c" stroke-width="0.8" stroke-dasharray="3 2"/>
+              <text x="70" y="125" fill="#f08080" font-family="monospace" font-size="6" font-weight="bold" text-anchor="middle">SCHEDULER_DAEMON</text>
+              <!-- MySQL / JPA Store -->
+              <rect x="155" y="65" width="90" height="45" rx="6" fill="#0d2010" stroke="#27ae60" stroke-width="2"/>
+              <text x="200" y="81" fill="#27ae60" font-family="monospace" font-size="7" font-weight="bold" text-anchor="middle">MySQL + JPA</text>
+              <text x="200" y="92" fill="#6dba8a" font-family="monospace" font-size="5.5" text-anchor="middle">ACID Transactions</text>
+              <text x="200" y="102" fill="#6dba8a" font-family="monospace" font-size="5.5" text-anchor="middle">Hibernate ORM</text>
+              <!-- JWT Auth -->
+              <rect x="155" y="125" width="90" height="40" rx="6" fill="#1e0d2a" stroke="#9b59b6" stroke-width="2"/>
+              <text x="200" y="141" fill="#c39bd3" font-family="monospace" font-size="7" font-weight="bold" text-anchor="middle">JWT Auth</text>
+              <text x="200" y="153" fill="#b39ddb" font-family="monospace" font-size="5.5" text-anchor="middle">Spring Security</text>
+              <!-- JasperReports -->
+              <rect x="295" y="65" width="90" height="60" rx="6" fill="#1a0d05" stroke="#e67e22" stroke-width="2"/>
+              <text x="340" y="85" fill="#e67e22" font-family="monospace" font-size="7" font-weight="bold" text-anchor="middle">JASPER</text>
+              <text x="340" y="96" fill="#f39c12" font-family="monospace" font-size="6" text-anchor="middle">Report Compiler</text>
+              <rect x="310" y="102" width="60" height="10" rx="2" fill="#e74c3c" fill-opacity="0.2" stroke="#e74c3c" stroke-width="0.8"/>
+              <text x="340" y="110" fill="#f08080" font-family="monospace" font-size="5.5" text-anchor="middle">PDF / Excel Export</text>
+              <!-- Audit Log -->
+              <rect x="295" y="140" width="90" height="35" rx="6" fill="#101a10" stroke="#27ae60" stroke-width="2"/>
+              <text x="340" y="155" fill="#27ae60" font-family="monospace" font-size="7" font-weight="bold" text-anchor="middle">Audit Logger</text>
+              <text x="340" y="167" fill="#6dba8a" font-family="monospace" font-size="5.5" text-anchor="middle">Immutable Ledger</text>
+              <!-- Docker badge -->
+              <rect x="15" y="185" width="55" height="22" rx="4" fill="#0d1f33" stroke="#2980b9" stroke-width="1.2"/>
+              <text x="42" y="199" fill="#7fc3e8" font-family="monospace" font-size="6" font-weight="bold" text-anchor="middle">Docker</text>
+              <rect x="78" y="185" width="55" height="22" rx="4" fill="#1a0d05" stroke="#e67e22" stroke-width="1.2"/>
+              <text x="105" y="199" fill="#e67e22" font-family="monospace" font-size="6" font-weight="bold" text-anchor="middle">Jasper</text>
+              <rect x="141" y="185" width="55" height="22" rx="4" fill="#1e0d2a" stroke="#9b59b6" stroke-width="1.2"/>
+              <text x="168" y="199" fill="#c39bd3" font-family="monospace" font-size="6" font-weight="bold" text-anchor="middle">JWT+Sec</text>
+              <!-- Connections -->
+              <line x1="125" y1="100" x2="155" y2="88" stroke="#2980b9" stroke-width="1.5" stroke-dasharray="5 3"/>
+              <line x1="125" y1="120" x2="155" y2="145" stroke="#9b59b6" stroke-width="1.5" stroke-dasharray="5 3"/>
+              <line x1="245" y1="88" x2="295" y2="90" stroke="#e67e22" stroke-width="1.5" stroke-dasharray="5 3"/>
+              <line x1="245" y1="145" x2="295" y2="155" stroke="#27ae60" stroke-width="1.5" stroke-dasharray="5 3"/>
+              <circle cx="155" cy="88" r="4" fill="#2980b9"/><circle cx="155" cy="145" r="4" fill="#9b59b6"/>
+              <circle cx="295" cy="90" r="4" fill="#e67e22"/><circle cx="295" cy="155" r="4" fill="#27ae60"/>
+            </svg>
+          </div>
+          
+          <div class="project-card-inner">
+            <span class="project-context">Financial Workflows</span>
+            <h3 class="project-title">LendingPro – Loan Management Platform</h3>
+            <p class="project-desc">A secured financial system coordinating complete loan life-cycles, interest amortization schedules, dynamic audit trails, and automatic monthly EMI calculations.</p>
+            
+            <div class="project-tags">
+              <span class="tag">Java</span>
+              <span class="tag">Spring Boot</span>
+              <span class="tag">Spring Security</span>
+              <span class="tag">JPA</span>
+              <span class="tag">JasperReports</span>
+              <span class="tag">MySQL</span>
+            </div>
+
+            <div class="project-actions">
+              <!-- Replaced with a proper Read More trigger as requested -->
+              <span class="timeline-cta project-modal-trigger" data-project="lendingpro">Read more &rarr;</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: BeeVyuha -->
+        <div class="project-card reveal">
+          <div class="project-graphic-box" style="padding:0; overflow:hidden; background:#0f1a0f;">
+            <svg viewBox="0 0 400 220" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%; height:100%;">
+              <defs>
+                <linearGradient id="bv-bg" x1="0" y1="0" x2="400" y2="220" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#0f1a0f"/><stop offset="100%" stop-color="#0f1f12"/></linearGradient>
+              </defs>
+              <rect width="400" height="220" fill="url(#bv-bg)"/>
+              <line x1="0" y1="55" x2="400" y2="55" stroke="#182818" stroke-width="1"/><line x1="0" y1="110" x2="400" y2="110" stroke="#182818" stroke-width="1"/><line x1="0" y1="165" x2="400" y2="165" stroke="#182818" stroke-width="1"/>
+              <line x1="100" y1="0" x2="100" y2="220" stroke="#182818" stroke-width="1"/><line x1="200" y1="0" x2="200" y2="220" stroke="#182818" stroke-width="1"/><line x1="300" y1="0" x2="300" y2="220" stroke="#182818" stroke-width="1"/>
+              <!-- School icon -->
+              <polygon points="50,12 80,30 20,30" fill="none" stroke="#27ae60" stroke-width="2"/>
+              <rect x="25" y="30" width="50" height="32" fill="none" stroke="#27ae60" stroke-width="2"/>
+              <rect x="42" y="42" width="16" height="20" fill="#27ae60" fill-opacity="0.3" stroke="#27ae60" stroke-width="1"/>
+              <text x="50" y="72" fill="#6dba8a" font-family="monospace" font-size="5.5" text-anchor="middle">SCHOOL ERP</text>
+              <!-- BeeVyuha Core -->
+              <rect x="120" y="60" width="100" height="65" rx="7" fill="#0a1f0a" stroke="#27ae60" stroke-width="2"/>
+              <rect x="120" y="60" width="100" height="18" rx="7" fill="#27ae60"/><rect x="120" y="72" width="100" height="6" fill="#27ae60"/>
+              <text x="170" y="72" fill="#fff" font-family="monospace" font-size="7.5" font-weight="bold" text-anchor="middle">BEEVYUHA ERP</text>
+              <rect x="132" y="85" width="76" height="10" rx="2" fill="#182818" stroke="#6dba8a" stroke-width="0.8"/>
+              <text x="170" y="92" fill="#6dba8a" font-family="monospace" font-size="5.5" text-anchor="middle">ADMIN_MODULE</text>
+              <rect x="132" y="99" width="76" height="10" rx="2" fill="#182818" stroke="#6dba8a" stroke-width="0.8"/>
+              <text x="170" y="106" fill="#6dba8a" font-family="monospace" font-size="5.5" text-anchor="middle">ACADEMIC_LEDGER</text>
+              <rect x="132" y="113" width="76" height="10" rx="2" fill="#1a0505" stroke="#e74c3c" stroke-width="0.8" stroke-dasharray="3 2"/>
+              <text x="170" y="120" fill="#f08080" font-family="monospace" font-size="5.5" font-weight="bold" text-anchor="middle">META WhatsApp API</text>
+              <!-- Jaspersoft -->
+              <rect x="270" y="45" width="110" height="50" rx="6" fill="#1a0d05" stroke="#e67e22" stroke-width="2"/>
+              <text x="325" y="62" fill="#e67e22" font-family="monospace" font-size="7" font-weight="bold" text-anchor="middle">JASPERSOFT</text>
+              <text x="325" y="73" fill="#f39c12" font-family="monospace" font-size="5.5" text-anchor="middle">Report Generator</text>
+              <text x="325" y="83" fill="#9bb3c7" font-family="monospace" font-size="5.5" text-anchor="middle">PDF / Excel Exports</text>
+              <!-- JUnit+Mockito -->
+              <rect x="270" y="110" width="110" height="45" rx="6" fill="#0d1a2a" stroke="#2980b9" stroke-width="2"/>
+              <text x="325" y="126" fill="#7fc3e8" font-family="monospace" font-size="7" font-weight="bold" text-anchor="middle">Test Suite</text>
+              <text x="325" y="137" fill="#9bb3c7" font-family="monospace" font-size="5.5" text-anchor="middle">JUnit + Mockito</text>
+              <text x="325" y="147" fill="#9bb3c7" font-family="monospace" font-size="5.5" text-anchor="middle">+35% Coverage</text>
+              <!-- Play Store badge -->
+              <rect x="120" y="145" width="100" height="30" rx="5" fill="#0d1610" stroke="#27ae60" stroke-width="1.5"/>
+              <polygon points="133,153 133,167 145,160" fill="#27ae60"/>
+              <text x="170" y="163" fill="#6dba8a" font-family="monospace" font-size="6.5" font-weight="bold" text-anchor="middle">Google Play ▸</text>
+              <!-- Badges -->
+              <rect x="15" y="185" width="75" height="22" rx="4" fill="#0a1f0a" stroke="#27ae60" stroke-width="1.2"/>
+              <text x="52" y="199" fill="#6dba8a" font-family="monospace" font-size="6" font-weight="bold" text-anchor="middle">Spring Boot</text>
+              <rect x="98" y="185" width="65" height="22" rx="4" fill="#1a0d05" stroke="#e67e22" stroke-width="1.2"/>
+              <text x="130" y="199" fill="#e67e22" font-family="monospace" font-size="6" font-weight="bold" text-anchor="middle">Jaspersoft</text>
+              <rect x="171" y="185" width="55" height="22" rx="4" fill="#0d1a2a" stroke="#2980b9" stroke-width="1.2"/>
+              <text x="198" y="199" fill="#7fc3e8" font-family="monospace" font-size="6" font-weight="bold" text-anchor="middle">JUnit/Mock</text>
+              <!-- Connections -->
+              <line x1="90" y1="52" x2="120" y2="80" stroke="#27ae60" stroke-width="1.5" stroke-dasharray="4 3"/>
+              <line x1="220" y1="72" x2="270" y2="70" stroke="#e67e22" stroke-width="1.5" stroke-dasharray="5 3"/>
+              <line x1="220" y1="105" x2="270" y2="132" stroke="#2980b9" stroke-width="1.5" stroke-dasharray="5 3"/>
+              <circle cx="120" cy="80" r="4" fill="#27ae60"/><circle cx="270" cy="70" r="4" fill="#e67e22"/><circle cx="270" cy="132" r="4" fill="#2980b9"/>
+            </svg>
+          </div>
+          
+          <div class="project-card-inner">
+            <span class="project-context">Institutional ERP</span>
+            <h3 class="project-title">BeeVyuha – School ERP Platform</h3>
+            <p class="project-desc">A centralized institutional school ERP platform coordinating academic ledgers, registers, student performance dashboards, and real-time parent notifications.</p>
+            
+            <div class="project-tags">
+              <span class="tag">Java</span>
+              <span class="tag">Spring Boot</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">Jaspersoft</span>
+              <span class="tag">JUnit</span>
+              <span class="tag">Mockito</span>
+            </div>
+
+            <div class="project-actions">
+              <!-- Replaced with a proper Read More trigger as requested -->
+              <span class="timeline-cta project-modal-trigger" data-project="beevyuha">Read more &rarr;</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <!-- MODAL 1: SHOPFLOW CASE STUDY -->
+  <div class="modal-overlay" id="modal-shopflow">
+    <div class="modal-box">
+      <button class="modal-close-btn">&times;</button>
+      <div class="modal-header-block">
+        <span class="modal-subtitle">System Architecture Case Study</span>
+        <h3 class="modal-title">ShopFlow – E-Commerce Microservices Platform</h3>
+      </div>
+      
+      <div class="modal-content-body">
+        <div>
+          <h4>Project Overview</h4>
+          <p>
+            ShopFlow is a scalable e-commerce backend platform developed using a microservices architecture to simulate the complex, highly distributed systems used in modern online shopping portals. 
+          </p>
+          <p>
+            The platform is designed to decouple operations into modular, independent services that coordinate synchronous transactions and asynchronous events safely. The target implementation handles authentication, catalog catalog management, order processing pipelines, checkout integrations, and transactional delivery triggers.
+          </p>
+        </div>
+
+        <div class="modal-section-divider">
+          <h4>Key Features &amp; Modules</h4>
+          <ul class="modal-bullets-list">
+            <li><strong>Authentication Service:</strong> Centralized security center validating requests, generating JWT credentials, and handling user profiles.</li>
+            <li><strong>Product Service:</strong> Dynamic inventory and product catalog manager supporting paginated listings and cache hits.</li>
+            <li><strong>Order Service:</strong> Transactional order orchestrator executing checkout validations and balance checks.</li>
+            <li><strong>Payment Service:</strong> Checkout gateway mockup dealing with transactional status reporting.</li>
+            <li><strong>Notification Service:</strong> Asynchronous listener firing order confirmations and transaction updates.</li>
+            <li><strong>API Gateway:</strong> Spring Cloud Gateway routing requests, balancing service loads, and enforcing global JWT authentication checks.</li>
+            <li><strong>Eureka Discovery:</strong> Dynamic server directory facilitating service discovery and registration for fail-safe routing.</li>
+          </ul>
+        </div>
+
+        <div class="modal-section-divider">
+          <h4>Engineering Challenges &amp; Solutions</h4>
+          
+          <div class="modal-cs-box">
+            <span class="modal-cs-label challenge">Challenge 1: Decoupling Inter-Service Communication</span>
+            <p>Managing network-level calls across multiple services while ensuring absolute performance and loose coupling. Blocking REST calls between the Order and Notification services created request failures under load.</p>
+            <p style="margin-top: 8px; font-weight: 500; color: var(--ink);"><strong>Solution:</strong> Retained REST APIs only for synchronous workflows, and integrated **RabbitMQ** event channels for asynchronous notifications. Order updates are published as events, enabling the Notification service to consume messages without blocking.</p>
+          </div>
+
+          <div class="modal-cs-box" style="margin-top: 20px;">
+            <span class="modal-cs-label challenge">Challenge 2: Decentralized Authentication</span>
+            <p>Verifying credentials across independently running service clusters consistently without querying a central DB for every request, which would defeat microservice scalability.</p>
+            <p style="margin-top: 8px; font-weight: 500; color: var(--ink);"><strong>Solution:</strong> Developed JWT authorization pipelines. The API Gateway intercepts and validates JWT headers locally using shared crypto-keys. Valid claims are injected into HTTP request headers before routing to downstream services.</p>
+          </div>
+        </div>
+
+        <div class="modal-section-divider">
+          <h4>Key Outcomes &amp; Takeaways</h4>
+          <p>
+            Successfully constructed a highly cohesive microservice ecosystem running in dockerized setups. The system proved that microservices architecture can scale operations independently and safely.
+          </p>
+          <ul class="modal-bullets-list">
+            <li>Gained hands-on experience structuring distributed architectures, circuit breakers, and load balancers.</li>
+            <li>Mastered asynchronous messaging channels and RabbitMQ event architectures.</li>
+            <li>Achieved complete system containerization using Docker compose.</li>
+          </ul>
+          
+          <div style="margin-top:24px;">
+            <a href="https://github.com/mahabs2002/shopflow-microservices" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">GitHub Repository</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 2: LENDINGPRO CASE STUDY -->
+  <div class="modal-overlay" id="modal-lendingpro">
+    <div class="modal-box">
+      <button class="modal-close-btn">&times;</button>
+      <div class="modal-header-block">
+        <span class="modal-subtitle">Financial Amortization Case Study</span>
+        <h3 class="modal-title">LendingPro – Loan Management Platform</h3>
+      </div>
+      
+      <div class="modal-content-body">
+        <div>
+          <h4>Project Overview</h4>
+          <p>
+            LendingPro is an enterprise-grade backend loan processing platform engineered to coordinate financial repayment schedules, audit-logged workflows, user authentication, and reporting structures. 
+          </p>
+          <p>
+            The project focuses on securing sensitive financial ledger calculations, designing automated amortizations, and creating compliant reporting systems to demonstrate reliable enterprise transaction management.
+          </p>
+        </div>
+
+        <div class="modal-section-divider">
+          <h4>Key Features &amp; Modules</h4>
+          <ul class="modal-bullets-list">
+            <li><strong>Loan Workflow Orchestrator:</strong> Manages loan applications through custom workflows (Draft, Approved, Active, Defaulted, Closed).</li>
+            <li><strong>Automated Amortizer:</strong> Backend engine dynamically computing interest balances, principal distributions, and repayment calendars.</li>
+            <li><strong>Repayment Scheduler:</strong> Background cron daemon tracking due dates and updating penalties/EMIs.</li>
+            <li><strong>Secure Ledger Access:</strong> JWT credentials and role-based access controls protecting sensitive balance modifications.</li>
+            <li><strong>Audit Logging:</strong> Interceptor auditing mechanisms recording principal shifts and interest revisions in real-time.</li>
+            <li><strong>JasperReports Compiler:</strong> Generates pixel-perfect parameterized payment logs and monthly receipts.</li>
+          </ul>
+        </div>
+
+        <div class="modal-section-divider">
+          <h4>Engineering Challenges &amp; Solutions</h4>
+          
+          <div class="modal-cs-box">
+            <span class="modal-cs-label challenge">Challenge 1: Repayment Calculations &amp; Schedulers</span>
+            <p>Handling accurate principal calculations, balance amortizations, and daily interest updates over historical accounts while ensuring complete transaction safety and thread isolation.</p>
+            <p style="margin-top: 8px; font-weight: 500; color: var(--ink);"><strong>Solution:</strong> Developed calculative engines using high-precision BigDecimal models. Configured a Spring Scheduled task runner executing transactional background operations safely isolated under MySQL row locks.</p>
+          </div>
+
+          <div class="modal-cs-box" style="margin-top: 20px;">
+            <span class="modal-cs-label challenge">Challenge 2: Financial Audit Records</span>
+            <p>Maintaining a compliant financial audit trail that prevents accidental updates to repayments and traces balance adjustments without slowing down query performance.</p>
+            <p style="margin-top: 8px; font-weight: 500; color: var(--ink);"><strong>Solution:</strong> Implemented JPA entity listeners and audit logger tables. Repayment revisions trigger database triggers that push adjustments to an immutable ledger log, leaving primary indexes untouched.</p>
+          </div>
+        </div>
+
+        <div class="modal-section-divider">
+          <h4>Key Outcomes &amp; Takeaways</h4>
+          <p>
+            Built a robust transaction-compliant financial ledger system ready for deployment. The platform proved highly accurate in computing amortization structures under standard database constraints.
+          </p>
+          <ul class="modal-bullets-list">
+            <li>Mastered high-precision business math operations and balance calculations in Java.</li>
+            <li>Deepened experience with Spring Security and advanced JWT authorization patterns.</li>
+            <li>Learned to compile complex visual layouts using Jaspersoft JRXML compilers.</li>
+          </ul>
+          
+          <div style="margin-top:24px;">
+            <a href="https://github.com/mahabs2002/lendingPro-loan-management-platform" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">GitHub Repository</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 3: BEEVYUHA CASE STUDY -->
+  <div class="modal-overlay" id="modal-beevyuha">
+    <div class="modal-box">
+      <button class="modal-close-btn">&times;</button>
+      <div class="modal-header-block">
+        <span class="modal-subtitle">Enterprise ERP Case Study</span>
+        <h3 class="modal-title">BeeVyuha – School Management Platform</h3>
+      </div>
+      
+      <div class="modal-content-body">
+        <div>
+          <h4>Project Overview</h4>
+          <p>
+            BeeVyuha is an institutional school management ERP designed to support administrative, academic, and communication workflows through a high-capacity centralized backend engine.
+          </p>
+          <p>
+            My contributions as part of the backend team at PraVyuha Tech Solutions LLP focused on building core administrative modules, designing parameterized visual reports using Jaspersoft, and developing Meta WhatsApp notification channels.
+          </p>
+        </div>
+
+        <div class="modal-section-divider">
+          <h4>Key Contributions</h4>
+          <ul class="modal-bullets-list">
+            <li><strong>ERP Academic Modules:</strong> Built transactional endpoints handling student records, attendance calendars, and examination profiles.</li>
+            <li><strong>Jaspersoft Report compiler:</strong> Compiled JRXML templates producing parameterized student cards and attendance sheets.</li>
+            <li><strong>Meta WhatsApp API integration:</strong> Designed real-time transactional alert notification PoCs using the WhatsApp API.</li>
+            <li><strong>SQL Performance Engineering:</strong> Restructured database query joins to lower compilation load times.</li>
+            <li><strong>Testing Infrastructure:</strong> Created test rigs utilizing JUnit and Mockito to verify service behaviors.</li>
+          </ul>
+        </div>
+
+        <div class="modal-section-divider">
+          <h4>Engineering Challenges &amp; Solutions</h4>
+          
+          <div class="modal-cs-box">
+            <span class="modal-cs-label challenge">Challenge 1: Report Rendering Timeout</span>
+            <p>Compiling monthly attendance registers and student card grids over large directories under concurrency often hit database timeout limits, stalling the API.</p>
+            <p style="margin-top: 8px; font-weight: 500; color: var(--ink);"><strong>Solution:</strong> Restructured relational indexes, replaced sub-queries with direct joins, and implemented pre-compilation caching for Jaspersoft template files, reducing rendering time.</p>
+          </div>
+
+          <div class="modal-cs-box" style="margin-top: 20px;">
+            <span class="modal-cs-label challenge">Challenge 2: real-time parent alerts</span>
+            <p>Sending automated messages and notifications to parents under strict latency guarantees without blocking ERP operations.</p>
+            <p style="margin-top: 8px; font-weight: 500; color: var(--ink);"><strong>Solution:</strong> Created a Meta WhatsApp API Integration PoC utilizing WebClient async calls, isolating notification pipelines from the primary ERP request cycles.</p>
+          </div>
+        </div>
+
+        <div class="modal-section-divider">
+          <h4>Key Outcomes &amp; Takeaways</h4>
+          <p>
+            Successfully shipped institutional ERP components in active use, securing real-world backend engineering experience in enterprise projects.
+          </p>
+          <ul class="modal-bullets-list">
+            <li>Gained deep familiarity managing production support and troubleshooting.</li>
+            <li>Mastered relational query analyzer structures and database performance engineering.</li>
+            <li>Achieved extensive coverage benchmarks using JUnit and Mockito.</li>
+          </ul>
+          
+          <div style="margin-top:24px;">
+            <a href="https://play.google.com/store/apps/details?id=com.pravyuha.apps.beevyuha&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Google Play App</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer" id="footer">
+    <div class="container">
+      <p>&copy; 2026 Mahalakshmi BS &mdash; Chennai, Tamil Nadu</p>
+      <div class="footer-links">
+        <a href="index.html" class="footer-top">&#8592; Back to Home</a>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
